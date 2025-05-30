@@ -1,40 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Left side Login UI</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Document</title>
   <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-
-  
 </head>
 <body>
-  <main>
-    <div class="container">
-      <div class="login-form">
-        <h1>Login</h1>
-        <form action="index.html" method="post">
-          <div class="input-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
-          </div>
-          <div class="input-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
-          </div>
-          <button type="submit">Login</button>
-          <div class="social-login">
-            <p>Or login with</p>
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-google"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            </div>
-        </form>
+<main>
+  <div class="container">
+    <div class="leftside">
+      <h1>Login</h1>
+      <form action="" method="post" id="login">
+        <label class="username">Username</label>
+        <input type="text" placeholder="Username" id="username">
+
+        <label class="password">Password</label>
+
+        <input type="password" placeholder="Password" id="password">
+        <div class="checkbox"></div>
+        <button id="loginbtn" type="submit">Login</button>
+      </form>
+      <div class="login-methods">
+
+        <a href="https://facebook.com" target="_blank"><img src="../images/Facebook.gif" alt="facebook"></a>
+        <a href="https://google.com"><img src="images/google.gif"></a>
+        <a href="https://linkedin.com"><img src="images/linkedin.gif"></a>
       </div>
     </div>
-  </main>
+    <img src="images/bg.jpg" alt="bg" id="bg">
+  </div>
+</main>
 
 
 
