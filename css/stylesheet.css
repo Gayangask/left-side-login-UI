@@ -71,7 +71,63 @@ input{
   padding: 12px;
   font-size: 1rem;
   margin-left: 24px;
+  width: 80%;
 }
 
 /* Custom Checkbox Styles */
+.checkbox{
+  position: relative;
+}
+.check{
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: azure;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin-right: 10px;
+  position: absolute;
+  left: 20px;
+  margin-top: 10px;
+}
+#checkbox{
+  position: absolute;
+  top:2px;
+  left: -40px;
+  opacity: 0;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 10px;
+  z-index: 1;
 
+}
+ #checkbox:hover+.check{
+   background-color: darkgrey;
+ }
+ #checkbox:checked+.check{
+   background-image: url('../images/checkmark.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   border: none;
+   transform: scale(1.5);
+   background-color: azure;
+   display: block;
+   position: absolute;
+
+ }.checkboxlabel{
+  z-index: 3;
+  position: relative;
+  left: 40px;
+  top: 8px;
+  width: 100%;
+   }
+a{
+  margin-top: 20px;
+  margin-left: 20px;
+  color: red;
+  text-decoration: none;
+}
+button{
+  margin-left: 20px;
+}
