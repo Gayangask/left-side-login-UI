@@ -12,19 +12,28 @@
 <body>
 <main>
   <div class="container">
-    <div class="leftside">
-      <h1>Login</h1>
+    <div class="left-side">
+      <img  id="logo" src="images/esoftlogo.png" alt="logo">
+      <h1> Student Login</h1>
+
       <form action="" method="post" id="login">
-        <label class="username">Username</label>
+
         <input type="text" placeholder="Username" id="username">
 
-        <label class="password">Password</label>
 
         <input type="password" placeholder="Password" id="password">
-        <div class="checkbox"></div>
+
+        <div class="checkbox">
+          <input type="checkbox" id="checkbox">
+          <span class="check"></span>
+          <label for="checkbox">Show password</label>
+        </div>
+
+        <a href="https://www.google.com">Forgot Password?</a>
         <button id="loginbtn" type="submit">Login</button>
       </form>
       <div class="login-methods">
+        <h3> or Login with</h3>
 
         <a href="https://facebook.com" target="_blank"><img src="../images/Facebook.gif" alt="facebook"></a>
         <a href="https://google.com"><img src="images/google.gif"></a>

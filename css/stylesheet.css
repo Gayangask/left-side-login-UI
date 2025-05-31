@@ -4,44 +4,114 @@
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
-  color: #333;
-  text-decoration: none;
-  list-style: none;
-  text-align: center;
-  background-color: #f4f4f4;
   transition: all 0.3s ease;
+  background-color: azure;
+}
 
-}body{
+body{
   width: 100%;
   height: 100vh;
- }
-.container{
-  display: flex;
-  flex-direction: row;
 }
+
+.container{
+  display:flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
 #bg{
   width: 70%;
   height: 100vh;
   background-size: cover;
-  background-position: center;
 }
-.login-form{
+
+.left-side{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: flex-start;
   align-items: center;
-  width: 80%;
+  width: 30%;
   height: 100vh;
 }
-.imageContainer{
-  width: 80rem;
-  
-}.frm{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}a img{
+
+a img{
   width: 30px;
   aspect-ratio: 1/1;
-  }
+    margin-right:24px;
+    margin-left: 10px;
+}
+
+#logo{
+  width:10rem;
+  aspect-ratio: 2/1;
+}
+
+#login{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+}
+
+h1{
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+input{
+  padding: 12px;
+  font-size: 1rem;
+  margin-left: 24px;
+}
+
+/* Custom Checkbox Styles */
+.checkbox {
+  position: relative;
+  padding-left: 40px;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+  margin-left: 24px;
+    margin-top: 10px;
+}
+.checkbox input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+    top: 8px;
+    left: -20px;
+  cursor: pointer;
+
+}
+.checkbox .check {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  border: 2px solid black;
+  border-radius: 3px;
+  background: azure;
+  transition: background 0.3s, border 0.3s, transform 0.3s;
+}
+.checkbox:hover .check {
+  background-color: darkgrey;
+}
+.checkbox input[type="checkbox"]:checked + .check {
+  border: none;
+  background-color: azure;
+  background-image: url(../images/checkmark.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: scale(1.2);
+}
+
+.login-methods {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+
+}
